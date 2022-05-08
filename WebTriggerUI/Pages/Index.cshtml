@@ -1,0 +1,22 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">UI to invoke NLP Steps manually</h1>
+    @*<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+    <p>
+        <form id="frmSubmit">
+            <table align="left" width="500px">
+                <tr><td>1</td><td><label>Trigger Web Crawl</label>  </td> <td><input type="button" id="btnTriggerWebCrawl" value="Invoke" /></td></tr>
+                <tr><td>2</td><td><label>Extract Web Text</label>  </td> <td><input type="button" id="btnExtractInfo" value="Invoke" /></td></tr>
+                <tr><td>3</td><td><label>Invoke NLP Processing</label>  </td> <td><input type="button" id="btnProcNLP" value="Invoke" /></td></tr>
+                <tr></tr>
+            </table>
+            <p> </p>
+            <br/>
+        </form>
+    </p>
+</div>
